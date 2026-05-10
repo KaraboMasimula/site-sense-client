@@ -1,0 +1,148 @@
+@import 'tailwindcss';
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+:root {
+  color-scheme: light;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+  background: #f6f8ff;
+  color: #0f1645;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 10% 8%, rgba(124, 58, 237, 0.11), transparent 30rem),
+    radial-gradient(circle at 88% 8%, rgba(56, 189, 248, 0.12), transparent 32rem),
+    radial-gradient(circle at 50% 48%, rgba(244, 114, 182, 0.1), transparent 34rem), #f7f9ff;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.glass-panel {
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 24px 70px rgba(76, 91, 175, 0.12);
+  backdrop-filter: blur(18px);
+}
+
+.aurora-text {
+  background: linear-gradient(120deg, #2563eb, #7c3aed 48%, #db2777);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.ss-container {
+  width: min(100% - 2rem, 70rem);
+  margin-inline: auto;
+}
+
+.ss-btn {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    background 160ms ease,
+    border-color 160ms ease;
+}
+
+.ss-btn:hover {
+  transform: translateY(-1px);
+}
+
+.ss-btn-primary {
+  color: #fff;
+  background: linear-gradient(135deg, #6d5dfc, #7c3aed);
+  box-shadow: 0 16px 34px rgba(109, 93, 252, 0.28);
+}
+
+.ss-btn-primary:hover {
+  background: linear-gradient(135deg, #5b4af0, #6d28d9);
+}
+
+.ss-btn-outline {
+  color: #4338ca;
+  border: 1px solid rgba(109, 93, 252, 0.32);
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: 0 10px 28px rgba(99, 102, 241, 0.08);
+}
+
+.ss-card {
+  border: 1px solid rgba(226, 232, 240, 0.86);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.74);
+  box-shadow: 0 22px 60px rgba(71, 85, 180, 0.11);
+  backdrop-filter: blur(20px);
+}
+
+.ss-input {
+  min-height: 3rem;
+  width: 100%;
+  border-radius: 0.625rem;
+  border: 1px solid #dbe3f1;
+  background: rgba(255, 255, 255, 0.82);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #11173f;
+  outline: none;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.ss-input-with-icon {
+  padding-left: 2.5rem;
+}
+
+.ss-input-with-right-icon {
+  padding-right: 2.75rem;
+}
+
+.ss-input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.11);
+}
+
+.ss-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border-radius: 999px;
+  border: 1px solid rgba(124, 58, 237, 0.13);
+  background: rgba(255, 255, 255, 0.72);
+  padding: 0.4rem 0.75rem;
+  color: #5b21b6;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  box-shadow: 0 10px 28px rgba(124, 58, 237, 0.08);
+}
+
+.ss-soft-section {
+  border-block: 1px solid rgba(226, 232, 240, 0.58);
+  background: rgba(255, 255, 255, 0.36);
+}
